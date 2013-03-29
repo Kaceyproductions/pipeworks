@@ -164,5 +164,12 @@ if io.open(minetest.get_modpath("pipeworks").."/../technic/init.lua", "r") == ni
 		{ "", "default:steel_ingot", "" },
         },
 	})
-
+	minetest.register_craft( {
+        output = "pipeworks:autocrafter 2",
+        recipe = {
+		{ "default:obsidian", "pipeworks:tube", "default:obsidian" },
+                { "pipeworks:tube", "default:steelblock", "pipeworks:tube" },
+		{ "default:obsidian", "pipeworks:tube", "default:obsidian" },
+        },
+	})
 end
