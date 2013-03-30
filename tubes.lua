@@ -464,3 +464,4 @@ minetest.register_abm({nodenames={"group:sand_tube"},interval=1,chance=1,
 
 modpath=minetest.get_modpath("pipeworks")
 dofile(modpath.."/teleport_tube.lua")
+dofile(modpath.."/mesecons.lua")
